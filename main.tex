@@ -1,0 +1,91 @@
+%==============================================================
+%  PROJECT REPORT — Course-specific AI tutoring prototype
+%  Reykjavik University
+%
+%  Venue-neutral scaffold. To retarget later (arXiv / workshop /
+%  conference), you usually only swap the \documentclass line and
+%  a few packages — the section files stay the same.
+%==============================================================
+
+\documentclass[11pt,a4paper]{article}
+
+% ---- Core packages -----------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype}
+
+% ---- Math & symbols ----------------------------------------
+\usepackage{amsmath,amssymb,amsthm}
+
+% ---- Figures, tables, code ---------------------------------
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{xcolor}
+
+% ---- References & links ------------------------------------
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cleveref}
+
+% ---- Listing style (for code / prompt snippets) ------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  columns=fullflexible,
+  showstringspaces=false
+}
+
+% ---- Title -------------------------------------------------
+\title{\textbf{TODO: Report Title}\\
+  \large A course-specific retrieval system that points students\\
+  back to their own materials\\[0.3em]
+  \normalsize \textit{(working subtitle --- replace)}}
+
+\author{
+  Helgi Skarph\'edinsson\\
+  \small Reykjavik University\\
+  \small \texttt{TODO: email}
+  \and
+  TODO: Supervising Professor\\
+  \small Reykjavik University
+}
+
+\date{\today}
+
+%==============================================================
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\noindent
+% ~150-200 words. Write this LAST. One sentence per bullet:
+% (1) Problem: better AI tutors can leave students worse learners.
+% (2) Idea: instead of answering, retrieve & filter course material
+%     down to the 2-3 references/images that address the question,
+%     directing the student back to their own sources.
+% (3) What you built: the prototype + how it works in one line.
+% (4) What you found / evaluated (even if preliminary).
+% (5) Why it matters.
+TODO --- write abstract last, once the sections settle.
+\end{abstract}
+
+% ---- Body: modular section files ---------------------------
+\input{sections/01_introduction}
+\input{sections/02_background}
+\input{sections/03_system}
+\input{sections/04_implementation}
+\input{sections/05_evaluation}
+\input{sections/06_discussion}
+\input{sections/07_conclusion}
+
+% ---- Bibliography ------------------------------------------
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

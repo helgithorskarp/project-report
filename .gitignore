@@ -1,0 +1,23 @@
+# LaTeX build artifacts (regenerated on every compile)
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+build*.log
+
+# OS junk
+.DS_Store
+
+# Keep the compiled PDF out of version control (optional — delete this
+# line if you'd rather track main.pdf too)
+main.pdf

@@ -1,0 +1,39 @@
+\section{System Design}
+\label{sec:system}
+
+% GOAL: the conceptual design, independent of code. A reader should
+% understand HOW it works and WHY each choice was made. ~1.5-2 pages.
+% Put an architecture diagram here — it does a lot of work.
+
+\subsection{Design principle}
+% The one rule the system is built around: point back to sources,
+% don't substitute for thinking. State it, then show how the pipeline
+% enforces it.
+TODO.
+
+\subsection{Pipeline overview}
+% Walk the path: course materials in -> indexing -> student question ->
+% retrieval -> filtering to 2-3 references/images -> response that cites
+% the exact sources. A figure here is worth a lot.
+\begin{figure}[H]
+  \centering
+  % \includegraphics[width=0.9\linewidth]{figures/architecture.pdf}
+  \fbox{\parbox[c][4cm][c]{0.9\linewidth}{\centering TODO: architecture diagram}}
+  \caption{System architecture: from course materials to source-pointing responses.}
+  \label{fig:arch}
+\end{figure}
+
+\subsection{Ingesting course material}
+% How slides + textbooks get parsed, chunked, and indexed. Course-scoping.
+TODO.
+
+\subsection{Retrieval and filtering}
+% How you go from a query to the 2-3 most relevant references/images,
+% and how you keep it grounded in what was actually taught in that course.
+TODO.
+
+\subsection{The output decision}
+% The interesting part (and the thread you carry into your SOPs): deciding
+% what to return — hint vs. reference vs. nothing — and where the model's
+% judgment can be trusted vs. constrained.
+TODO.
